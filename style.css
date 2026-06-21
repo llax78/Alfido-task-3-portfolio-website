@@ -1,0 +1,89 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+background:rgba(0,0,0,0.8);
+}
+
+/* Hero Section */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+
+background: linear-gradient(
+135deg,
+#ff6b6b,
+#feca57,
+#48dbfb,
+#5f27cd
+);
+
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
+/* Skills */
+.skill-card{
+transition:0.3s;
+border:none;
+background:linear-gradient(
+45deg,
+#6a11cb,
+#2575fc
+);
+color:white;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+}
+
+/* Projects */
+.card{
+border:none;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* Contact */
+#contact{
+background:linear-gradient(
+135deg,
+#11998e,
+#38ef7d
+);
+color:white;
+}
